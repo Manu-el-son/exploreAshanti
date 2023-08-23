@@ -1,6 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors
 
 import 'package:explore/login/signup.dart';
+import 'package:explore/pages/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:explore/login/login.dart';
 
@@ -106,6 +107,22 @@ class WelcomeScreen extends StatelessWidget {
                         ]),
                   ),
                 ),
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const HomePage()));
+                  },
+                  child: const Text(
+                    'Guest',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontFamily: 'Urbanist',
+                      color: Color(0xFF07E5B0),
+                    ),
+                  ),
+                )
               ],
             ),
           ),

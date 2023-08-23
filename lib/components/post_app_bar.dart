@@ -19,6 +19,7 @@ class PostAppBar extends StatelessWidget {
               child: const Icon(
                 Icons.arrow_back_ios,
                 size: 28,
+                color: Colors.white,
               ),
             ),
           ),
